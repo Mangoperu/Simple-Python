@@ -1,1 +1,1 @@
-# Simple-Python
+# Simple-Daily-Python
