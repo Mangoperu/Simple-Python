@@ -75,3 +75,24 @@ print(np.min(array))
 print(np.argmin(array))#position of minimum value
 print(np.sum(array , axis = 0))#for columns
 print(np.sum(array , axis   = 1))
+
+array = np.array([[16  ,50 , 23 , 24  , 24 , 45 , 17] ,
+                  [ 23 , 54, 13 , 24 , 65 , 15 , 16]])
+array = np.where(array>18  , array , 0)
+print(array)
+
+
+
+
+#random generation
+
+rng = np.random.default_rng(seed = 2)
+print(rng.integers( 1  , 100 , size = ( 3 ,3 )))
+np.random.seed(seed = 1)
+print(np.random.uniform(1 , 2 , size = ( 2  , 2)))
+
+array = np.array([16  ,50 , 23 , 24  , 24 , 45 , 17] )
+
+rng.shuffle(array)
+print(rng.choice(array))
+print(array)
