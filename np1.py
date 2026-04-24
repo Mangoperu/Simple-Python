@@ -61,3 +61,17 @@ print(array2.shape)
 
 print(array * array2)
 print(array2 * array)
+
+
+
+array = np.array([[1 , 2, 3, 5],
+                 [10   , 2, 4, 7]])
+
+print(np.sum(array))
+print(np.mean(array))
+print(np.std(array))
+print(np.var(array))
+print(np.min(array))
+print(np.argmin(array))#position of minimum value
+print(np.sum(array , axis = 0))#for columns
+print(np.sum(array , axis   = 1))
