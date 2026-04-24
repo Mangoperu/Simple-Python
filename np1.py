@@ -35,3 +35,29 @@ print(mask)
 print(array[mask])
 print(array[array>=3])
 
+#arithmetic
+
+array = np.array([1 , 2, 3, 5])
+print(array+1)
+print(array - 1)
+print(array *2)
+print(array/2)
+print(np.sqrt(array))
+
+print(np.round(np.sqrt(array)))
+print(np.ceil(np.sqrt(array)))
+
+#broadcasting
+
+
+#to broadcast the shape of both array either have 1 or have sam dimensions
+array = np.array([1 , 2, 3 , 4])
+array2 = np.array([[1],
+                 [2],
+                 [3],
+                 [4]])
+print(array.shape)
+print(array2.shape)
+
+print(array * array2)
+print(array2 * array)
