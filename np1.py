@@ -27,3 +27,11 @@ print(array[:  , 1:4:2])
 print(array[0:2 , 0:2])
 
 
+#booleon masking
+array = np.array([[1 , 2, 3, 5],
+                 [10   , 2, 4, 7]])
+mask = array>=3
+print(mask)
+print(array[mask])
+print(array[array>=3])
+
